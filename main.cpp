@@ -27,10 +27,12 @@ bool is_palindrome(std::string& s)
 
 int main()
 {
-    std::vector<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
-        "avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
-        "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
+    std::vector<std::string> test_strings;
    
+    std::string temp;
+    std::cout << "Enter the word: ";
+    std::cin >> temp;
+    test_strings.push_back(temp);
     std::cout << std::boolalpha;
     std::cout << std::setw(8) << std::left << "Result" << "String" << std::endl;
     for(auto& s : test_strings) {
