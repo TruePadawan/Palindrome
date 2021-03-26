@@ -1,5 +1,4 @@
 // Identifying palindrome strings using a stack and queue
-#include <cctype>
 #include <stack>
 #include <queue>
 #include <iostream>
