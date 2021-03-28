@@ -13,12 +13,13 @@ bool is_palindrome(std::string& s)
             if(std::isupper(a))
                 dek.push_back(a);
         }
-    std::deque<char> kek;
-    int take{0};
-    for(size_t i{0}; i < dek.size(); ++i){
-        kek.push_back(*(dek.rbegin()+take));
-        ++take;
-    }
+    std::deque<char> kek = dek;
+ //   int take{0};
+//    for(size_t i{0}; i < dek.size(); ++i){
+//        kek.push_back(*(dek.rbegin()+take));
+//        ++take;
+//    }
+    std::reverse(kek.begin(), kek.end());
     if(dek == kek)
         return true;
     else
