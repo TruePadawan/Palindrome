@@ -1,3 +1,4 @@
+//PALINDROME USING DEQUES
 #include <iostream>
 #include <deque>
 #include <string>

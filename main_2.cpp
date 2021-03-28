@@ -1,4 +1,4 @@
-// Identifying palindrome strings using a stack and queue
+//PALINDROME USING STACKS AND QUEUES
 #include <stack>
 #include <queue>
 #include <iostream>
