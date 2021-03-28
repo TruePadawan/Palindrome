@@ -11,7 +11,7 @@ bool is_palindrome(std::string& s)
     std::deque<char> dek;
     std::transform(s.begin(), s.end(), s.begin(), ::toupper);
         for(auto &a:s){
-            if(std::isupper(a))
+            if(std::isalpha(a))
                 dek.push_back(a);
         }
     std::deque<char> kek = dek;
