@@ -7,7 +7,12 @@ using std::cout;
 using std::endl;
 
 bool Palindrome(std::string &s){
-    std::string collect{s};
+    std::string take;
+    for(auto &a: s){ // CHECKS IF THERE ARE ANY NON ALPHABET CHARACTERS IN THE WORD
+        if(std::isalpha(a))
+            take.push_back(a);
+    }
+    std::string collect{take};
     std::reverse(collect.begin(), collect.end());  //MAKES THE CONTENT OF 'COLLECT' REVERSED
     if(collect == s)
         return true;
