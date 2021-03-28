@@ -14,7 +14,7 @@ bool Palindrome(std::string &s){
     }
     std::string collect{take};
     std::reverse(collect.begin(), collect.end());  //MAKES THE CONTENT OF 'COLLECT' REVERSED
-    if(collect == s)
+    if(collect == take)
         return true;
     else
         return false;
