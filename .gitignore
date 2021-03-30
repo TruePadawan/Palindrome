@@ -3,3 +3,9 @@ Palindrome.mk
 Palindrome.project
 *.txt
 tags
+Debug/Palindrome.exe
+Debug/main_3.cpp.o.d
+Debug/main_3.cpp.o
+Debug/main.cpp.o.d
+Debug/main.cpp.o
+Debug/.d
