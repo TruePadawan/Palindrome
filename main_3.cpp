@@ -12,9 +12,8 @@ bool Palindrome(std::string &s){
         if(std::isalpha(a))
             take.push_back(a);
     }
-    std::string collect{take};
-    std::reverse(collect.begin(), collect.end());  //MAKES THE CONTENT OF 'COLLECT' REVERSED
-    if(collect == take)
+    std::reverse(take.begin(), take.end());  //MAKES THE CONTENT OF 'TAKE' REVERSED
+    if(take == s)
         return true;
     else
         return false;
